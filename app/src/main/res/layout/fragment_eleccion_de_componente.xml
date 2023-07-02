@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_eleccion_de_componente"
+    android:background="@color/black">
+<AutoCompleteTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="tipo de computadora"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+   android:gravity="center"
+    android:background="@color/primary"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:layout_marginTop="20dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:backgroundTint="@color/primary"
+      android:text="RAM"
+      android:textSize="35sp"
+      android:fontFamily="@font/arimo"
+      android:textColor="@color/white"
+
+      />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0/2"
+        android:textColor="@color/white"
+        android:layout_marginStart="350dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary"
+        android:text="PROCESADOR"
+        android:textSize="35sp"
+        android:fontFamily="@font/arimo"
+        android:textColor="@color/white"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary"
+        android:text="SSD"
+        android:textSize="35sp"
+        android:fontFamily="@font/arimo"
+        android:textColor="@color/white"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary"
+        android:text="TARJ. GRAFICA"
+        android:textSize="35sp"
+        android:fontFamily="@font/arimo"
+        android:textColor="@color/white"
+
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/primary"
+        android:text="MOTHER"
+        android:textSize="35sp"
+        android:fontFamily="@font/arimo"
+        android:textColor="@color/white"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="VER PC"
+        android:layout_gravity="center"
+        android:backgroundTint="#6AE587"
+        android:layout_marginTop="15dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>
+    </layout>
