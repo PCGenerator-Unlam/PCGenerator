@@ -7,7 +7,7 @@
     android:background="#000000"
     android:backgroundTint="#121212"
     android:orientation="horizontal"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.fragments.home.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,8 +21,7 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:src="@drawable/logo" />
+            android:layout_height="170dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"

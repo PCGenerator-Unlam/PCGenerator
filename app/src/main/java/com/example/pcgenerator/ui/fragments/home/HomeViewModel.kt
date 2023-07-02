@@ -1,4 +1,4 @@
-package com.example.pcgenerator.ui.home
+package com.example.pcgenerator.ui.fragments.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

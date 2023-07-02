@@ -1,4 +1,4 @@
-package com.example.pcgenerator.ui.home
+package com.example.pcgenerator.ui.fragments.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,12 +9,13 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pcgenerator.databinding.FragmentHomeBinding
+import com.example.pcgenerator.databinding.FragmentLoginBinding
 import com.example.pcgenerator.models.SetupHistorial
 import com.example.pcgenerator.ui.adapters.HistorialAdapter
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentLoginBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,7 +29,7 @@ class HomeFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentLoginBinding.inflate(inflater, container, false)
         val root: View = binding.root
 /*
         val textView: TextView = binding.textHome
@@ -42,11 +43,11 @@ class HomeFragment : Fragment() {
             listaCompus.add(SetupHistorial("Computadora $i"))
         }
         var historialAdapter : HistorialAdapter = HistorialAdapter(listaCompus)
-
+/*
         binding.recyclerHistorial.layoutManager =
             LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerHistorial.adapter = historialAdapter;
-
+*/
         return root
     }
 
