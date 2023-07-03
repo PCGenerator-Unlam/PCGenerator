@@ -15,10 +15,11 @@
             android:layout_width="75dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="@color/primary"
             app:icon="@drawable/back"
             app:iconSize="40dp"
-            app:iconTint="#000000" />
+            app:iconTint="#000000"
+            android:text="a"/>
 
         <LinearLayout
             android:layout_width="match_parent"
