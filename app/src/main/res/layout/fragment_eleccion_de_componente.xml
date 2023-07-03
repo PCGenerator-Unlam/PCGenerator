@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout
     android:layout_width="match_parent"
@@ -12,24 +13,29 @@
     android:layout_height="wrap_content"
     android:text="tipo de computadora"
     android:textSize="20sp"
-    android:textColor="@color/white"
+    android:textColor="@color/secondary"
    android:gravity="center"
     android:background="@color/primary"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
-    android:layout_marginTop="20dp"/>
+    android:layout_marginTop="20dp"
+    android:drawableRight="@drawable/clasificacion_de_aplicaciones__1_"
+    android:padding="8dp"/>
 
   <androidx.appcompat.widget.AppCompatButton
-    android:layout_marginTop="20dp"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="58dp"
       android:layout_marginStart="20dp"
+      android:layout_marginTop="50dp"
       android:layout_marginEnd="20dp"
-      android:backgroundTint="@color/primary"
-      android:text="RAM"
-      android:textSize="35sp"
+      android:background="@drawable/background_pc_armada"
       android:fontFamily="@font/arimo"
+      android:text="RAM"
       android:textColor="@color/white"
+      android:textSize="35sp"
+      android:drawableRight="@drawable/circulo_x"
+      android:padding="8dp"
+
 
       />
 
@@ -38,58 +44,72 @@
         android:layout_height="wrap_content"
         android:text="0/2"
         android:textColor="@color/white"
-        android:layout_marginStart="350dp"/>
-    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginStart="350dp"
+        android:layout_marginTop="10dp"/>
 
+  <androidx.appcompat.widget.AppCompatButton
+
+      android:layout_width="match_parent"
+      android:layout_height="58dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/background_pc_armada"
+      android:fontFamily="@font/arimo"
+      android:text="PROCESADOR"
+      android:textColor="@color/white"
+      android:textSize="35sp"
+      android:layout_marginTop="20dp"
+      android:drawableRight="@drawable/circulo_x"
+      android:padding="8dp"
+
+
+      />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:layout_width="match_parent"
+      android:layout_height="58dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="40dp"
+      android:layout_marginEnd="20dp"
+      android:background="@drawable/background_pc_armada"
+      android:fontFamily="@font/arimo"
+      android:text="SSD"
+      android:textColor="@color/white"
+      android:textSize="35sp"
+      android:drawableRight="@drawable/circulo_x"
+    android:padding="8dp"
+      />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/primary"
-        android:text="PROCESADOR"
+        android:background="@drawable/background_pc_armada"
+        android:text="T.GRAFICA"
         android:textSize="35sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
+        android:drawableRight="@drawable/circulo_x"
+        android:padding="8dp"
 
-        />
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/primary"
-        android:text="SSD"
-        android:textSize="35sp"
-        android:fontFamily="@font/arimo"
-        android:textColor="@color/white"
-
-        />
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/primary"
-        android:text="TARJ. GRAFICA"
-        android:textSize="35sp"
-        android:fontFamily="@font/arimo"
-        android:textColor="@color/white"
 
 
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/primary"
+
         android:text="MOTHER"
         android:textSize="35sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
+        android:background="@drawable/background_pc_armada"
+        android:drawableRight="@drawable/marque_el_circulo"
+        android:padding="8dp"
 
         />
 
@@ -99,8 +119,11 @@
         android:text="VER PC"
         android:layout_gravity="center"
         android:backgroundTint="#6AE587"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="60dp"
+
+        >
 
     </androidx.appcompat.widget.AppCompatButton>
+
 </LinearLayout>
     </layout>
