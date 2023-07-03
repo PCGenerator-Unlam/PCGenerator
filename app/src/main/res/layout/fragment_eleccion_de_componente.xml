@@ -9,20 +9,28 @@
     tools:context=".fragment_eleccion_de_componente"
     android:background="@color/black">
 <AutoCompleteTextView
+    android:id="@+id/ac_tipo_computadora"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="tipo de computadora"
     android:textSize="20sp"
     android:textColor="@color/secondary"
    android:gravity="center"
-    android:background="@color/primary"
+    android:background="@drawable/background_pc_armada"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
     android:layout_marginTop="20dp"
-    android:drawableRight="@drawable/clasificacion_de_aplicaciones__1_"
+    android:drawableEnd="@drawable/clasificacion_de_aplicaciones__1_"
     android:padding="8dp"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="10dp"
+
+      android:background="@drawable/line_shape" />
 
   <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/bt_ram_componentes"
       android:layout_width="match_parent"
       android:layout_height="58dp"
       android:layout_marginStart="20dp"
@@ -33,7 +41,7 @@
       android:text="RAM"
       android:textColor="@color/white"
       android:textSize="35sp"
-      android:drawableRight="@drawable/circulo_x"
+      android:drawableEnd="@drawable/circulo_x"
       android:padding="8dp"
 
 
@@ -48,7 +56,7 @@
         android:layout_marginTop="10dp"/>
 
   <androidx.appcompat.widget.AppCompatButton
-
+      android:id="@+id/bt_procesador_componentes"
       android:layout_width="match_parent"
       android:layout_height="58dp"
       android:layout_marginStart="20dp"
@@ -59,13 +67,14 @@
       android:textColor="@color/white"
       android:textSize="35sp"
       android:layout_marginTop="20dp"
-      android:drawableRight="@drawable/circulo_x"
+      android:drawableEnd="@drawable/circulo_x"
       android:padding="8dp"
 
 
       />
 
   <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/bt_ssd_componentes"
       android:layout_width="match_parent"
       android:layout_height="58dp"
       android:layout_marginStart="20dp"
@@ -76,10 +85,11 @@
       android:text="SSD"
       android:textColor="@color/white"
       android:textSize="35sp"
-      android:drawableRight="@drawable/circulo_x"
+      android:drawableEnd="@drawable/circulo_x"
     android:padding="8dp"
       />
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_tgrafica_componentes"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="58dp"
@@ -90,30 +100,31 @@
         android:textSize="35sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
-        android:drawableRight="@drawable/circulo_x"
+        android:drawableEnd="@drawable/circulo_x"
         android:padding="8dp"
 
 
 
         />
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_mother_componentes"
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-
         android:text="MOTHER"
         android:textSize="35sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
         android:background="@drawable/background_pc_armada"
-        android:drawableRight="@drawable/marque_el_circulo"
+        android:drawableEnd="@drawable/circulo_x"
         android:padding="8dp"
 
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_verpc_componentes"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="VER PC"

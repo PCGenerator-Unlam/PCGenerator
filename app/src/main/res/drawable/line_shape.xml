@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/myViolet" /> <!-- Cambia el valor "#FF0000" por el color que desees -->
+    <size android:height="1dp" /> <!-- Cambia el valor "2dp" para ajustar el grosor de la línea -->
+</shape>
