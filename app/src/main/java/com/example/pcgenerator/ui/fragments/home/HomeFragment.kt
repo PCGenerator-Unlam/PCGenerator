@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pcgenerator.R
 import com.example.pcgenerator.databinding.FragmentHomeBinding
 import com.example.pcgenerator.databinding.FragmentLoginBinding
 import com.example.pcgenerator.models.SetupHistorial
@@ -15,7 +17,7 @@ import com.example.pcgenerator.ui.adapters.HistorialAdapter
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -29,7 +31,7 @@ class HomeFragment : Fragment() {
         val homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 /*
         val textView: TextView = binding.textHome
@@ -40,7 +42,7 @@ class HomeFragment : Fragment() {
  */
         var listaCompus : MutableList<SetupHistorial> = mutableListOf()
         for(i in 1..10){
-            listaCompus.add(SetupHistorial("Computadora $i"))
+            //listaCompus.add(SetupHistorial("Computadora $i"))
         }
         var historialAdapter : HistorialAdapter = HistorialAdapter(listaCompus)
 /*
@@ -48,6 +50,9 @@ class HomeFragment : Fragment() {
             LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerHistorial.adapter = historialAdapter;
 */
+        binding.buttonNuevaComputadora.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_fragmentEquiposArmados)
+        }
         return root
     }
 

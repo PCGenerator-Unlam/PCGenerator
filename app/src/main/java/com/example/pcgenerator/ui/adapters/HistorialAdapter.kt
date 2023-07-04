@@ -19,11 +19,11 @@ class HistorialAdapter(var historialList : MutableList<SetupHistorial>
 
     override fun onBindViewHolder(holder: HistorialViewHolder, position: Int) {
             var setup = historialList[position]
-
+/*
             holder.binding.tvName.text = setup.nombre
         holder.binding.fecha.text = setup.fechaCreacion.toString()
         holder.binding.tvPrice.text = "$${setup.precio}"
-
+*/
     }
 
     override fun getItemCount(): Int = historialList.size

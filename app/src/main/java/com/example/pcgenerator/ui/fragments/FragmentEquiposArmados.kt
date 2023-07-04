@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.pcgenerator.R
-import com.example.pcgenerator.databinding.FragmentLoginBinding
+import com.example.pcgenerator.databinding.FragmentEquiposArmadosBinding
 
-class FragmentLogin : Fragment(){
+class FragmentEquiposArmados : Fragment(){
 
-    private var _binding: FragmentLoginBinding? = null
+    private var _binding: FragmentEquiposArmadosBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,16 +23,14 @@ class FragmentLogin : Fragment(){
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        _binding = FragmentEquiposArmadosBinding.inflate(inflater, container, false)
 
-        binding.buttonIniciarSesion.setOnClickListener{
-            findNavController().navigate(R.id.action_fragmentLogin_to_navigation_home)
+
+        binding.buttonComparar.setOnClickListener{
+            findNavController().navigate(R.id.action_fragmentEquiposArmados_to_fragmentGrafico)
         }
-        binding.buttonRegistrarme.setOnClickListener{
-            findNavController().navigate(R.id.action_fragmentLogin_to_fragmentRegistro)
-        }
-        return root
+
+        return binding.root
     }
 
     override fun onDestroyView() {

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arimo"
+            android:gravity="center"
+            android:text="Agregue los equipos deseados para consultar (maximo 4)"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:layout_margin="30dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arimo"
+            android:gravity="center"
+            android:text="PC Armadas"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_pc_armada"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    tools:layout_marginStart="10dp">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="272dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/arimo"
+                        android:text="PC PROGRAMADOR"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="75dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="#2F2247"
+                        android:contentDescription="tool"
+                        app:srcCompat="@drawable/settings3"
+                        tools:contextClickable="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas1"
+                        android:layout_width="28dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="3dp"
+                        app:srcCompat="@drawable/processor" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas2"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/graphic_card" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas3"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/ram_memory" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas4"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/ram_memory" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas5"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/solid_state_drive" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom|end"
+                        android:text="$ 255.670,00"
+                        android:textColor="@color/secondary" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_pc_armada"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal"
+                    tools:layout_marginStart="10dp">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="272dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="@font/arimo"
+                        android:text="PC PROGRAMADOR 2"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="75dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="2dp"
+                        android:backgroundTint="#2F2247"
+                        app:srcCompat="@drawable/settings3"
+                        tools:contextClickable="false"
+                        android:contentDescription="tool" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas6"
+                        android:layout_width="28dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="3dp"
+                        app:srcCompat="@drawable/processor" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas7"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/graphic_card" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas8"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/ram_memory" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas9"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/ram_memory" />
+
+                    <ImageView
+                        android:id="@+id/imagenArmadas10"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/solid_state_drive" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom|end"
+                        android:text="$ 205.200,00"
+                        android:textColor="@color/secondary" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/background_pc_armada"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/darkViolet"
+                app:srcCompat="@drawable/plus"
+                android:contentDescription="plus"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/background_pc_armada"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/darkViolet"
+                app:srcCompat="@drawable/plus"
+                android:contentDescription="plus" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonComparar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#5C2E99"
+            android:fontFamily="@font/arimo"
+            android:text="Comparar" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
