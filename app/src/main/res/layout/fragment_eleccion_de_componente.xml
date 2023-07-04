@@ -14,14 +14,15 @@
     android:layout_height="wrap_content"
     android:text="tipo de computadora"
     android:textSize="20sp"
-    android:textColor="@color/secondary"
+    android:textColor="@color/white"
    android:gravity="center"
     android:background="@drawable/background_pc_armada"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
     android:layout_marginTop="20dp"
-    android:drawableEnd="@drawable/clasificacion_de_aplicaciones__1_"
-    android:padding="8dp"/>
+    android:drawableEnd="@drawable/lista_desplegable"
+    android:padding="8dp"
+    android:fontFamily="@font/arimo"/>
   <TextView
       android:layout_width="match_parent"
       android:layout_height="1dp"
@@ -40,7 +41,7 @@
       android:fontFamily="@font/arimo"
       android:text="RAM"
       android:textColor="@color/white"
-      android:textSize="35sp"
+      android:textSize="30sp"
       android:drawableEnd="@drawable/circulo_x"
       android:padding="8dp"
 
@@ -65,7 +66,7 @@
       android:fontFamily="@font/arimo"
       android:text="PROCESADOR"
       android:textColor="@color/white"
-      android:textSize="35sp"
+      android:textSize="30sp"
       android:layout_marginTop="20dp"
       android:drawableEnd="@drawable/circulo_x"
       android:padding="8dp"
@@ -84,7 +85,7 @@
       android:fontFamily="@font/arimo"
       android:text="SSD"
       android:textColor="@color/white"
-      android:textSize="35sp"
+      android:textSize="30sp"
       android:drawableEnd="@drawable/circulo_x"
     android:padding="8dp"
       />
@@ -97,7 +98,7 @@
         android:layout_marginEnd="20dp"
         android:background="@drawable/background_pc_armada"
         android:text="T.GRAFICA"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
         android:drawableEnd="@drawable/circulo_x"
@@ -114,7 +115,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="MOTHER"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:fontFamily="@font/arimo"
         android:textColor="@color/white"
         android:background="@drawable/background_pc_armada"
@@ -129,9 +130,10 @@
         android:layout_height="wrap_content"
         android:text="VER PC"
         android:layout_gravity="center"
-        android:backgroundTint="#6AE587"
+        android:backgroundTint="#5C2E99"
+        android:fontFamily="@font/arimo"
         android:layout_marginTop="60dp"
-
+android:textColor="@color/white"
         >
 
     </androidx.appcompat.widget.AppCompatButton>
