@@ -35,9 +35,9 @@ class FragmentGrafico : Fragment(){
 
         val procesadores = ArrayList<Procesador>();
         val coloresBarras = ArrayList<String>();
-        procesadores.add(Procesador("Ryzen 5 PRO 4650G", "4.00"))
-        procesadores.add(Procesador("Ryzen 3 PRO 4350G", "3.85"))
-        procesadores.add(Procesador("Ryzen 7", "4.65"))
+        procesadores.add(Procesador("Ryzen 5 PRO 4650G", 4.00F))
+        procesadores.add(Procesador("Ryzen 3 PRO 4350G", 3.85F))
+        procesadores.add(Procesador("Ryzen 7", 4.65F))
         coloresBarras.add("#6AE587")
         coloresBarras.add("#FFBB86FC")
         coloresBarras.add("#FF6200EE")
@@ -47,8 +47,8 @@ class FragmentGrafico : Fragment(){
         for(procesador in procesadores){
                 val barra = Bar()
                 barra.color = Color.parseColor(coloresBarras[contador])
-                barra.name = procesador.nombre
-                barra.value = procesador.potencia.toFloat()
+                barra.name = procesador.tituloNombreMarca
+                barra.value = procesador.velocidad
                 barras.add(barra)
                 contador++
         }

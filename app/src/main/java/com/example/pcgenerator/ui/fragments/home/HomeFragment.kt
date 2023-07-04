@@ -50,8 +50,11 @@ class HomeFragment : Fragment() {
             LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerHistorial.adapter = historialAdapter;
 */
-        binding.buttonNuevaComputadora.setOnClickListener{
+        binding.button2.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_home_to_fragmentEquiposArmados)
+        }
+        binding.buttonNuevaComputadora.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_fragment_eleccion_de_componente)
         }
         return root
     }
