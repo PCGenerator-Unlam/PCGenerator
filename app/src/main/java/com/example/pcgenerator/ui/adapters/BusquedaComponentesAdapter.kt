@@ -20,7 +20,11 @@ class BusquedaComponentesAdapter(var componentesList : MutableList<Componentes>
 
     override fun onBindViewHolder(holder: BusquedaComponentesViewHolder, position: Int) {
         val component=componentesList[position]
-        holder.binding.imImagencomponente
+        if(component.image!=null){
+        holder.binding.imImagencomponente.setImageResource(component.image)}
+    holder.binding.tvTitulocomponente.setText(component.tituloNombreMarca)
+    holder.binding.tvDescripcion.setText(component.descripcion())
+    holder.binding.tvPrecio.setText(component.precio.toString())
     }
 
 
