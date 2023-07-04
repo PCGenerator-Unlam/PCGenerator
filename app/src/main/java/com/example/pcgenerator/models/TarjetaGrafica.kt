@@ -5,7 +5,7 @@ class TarjetaGrafica(   nombreMarca: String,
                         image: Int? =null,
                         val cantidadDeRam:Int,
 
-                        ):Componentes(TipoDeComponente.PROCESADOR,nombreMarca,image,precio){
+                        ):Componentes(TipoDeComponente.TARJETA_GRAFICA,nombreMarca,image,precio){
     override fun descripcion(): String {
         return "${cantidadDeRam.toString()} Gb"
     }
