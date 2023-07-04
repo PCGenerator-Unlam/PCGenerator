@@ -9,7 +9,7 @@ class Procesador(
     val velocidad:Float,
 
     ):Componentes(TipoDeComponente.PROCESADOR,nombreMarca,image,precio){
-    override fun descripcion(int: Int): String {
+    override fun descripcion(): String {
      return "${velocidad.toString()} GHz"
     }
 

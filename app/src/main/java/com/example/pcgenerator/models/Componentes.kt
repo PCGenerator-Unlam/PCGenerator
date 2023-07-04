@@ -5,5 +5,5 @@ abstract class Componentes(
     val tituloNombreMarca:String,
     val image:Int?=null,
     val precio: Double=0.0) {
-    abstract fun descripcion(int: Int):String
+    abstract fun descripcion():String
 }
