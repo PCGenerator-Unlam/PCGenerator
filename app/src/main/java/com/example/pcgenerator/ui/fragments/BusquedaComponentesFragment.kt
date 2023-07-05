@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pcgenerator.R
@@ -48,12 +49,12 @@ class BusquedaComponentesFragment : Fragment() {
         var listaComponentes: MutableList<Componentes> = mutableListOf()
         binding!!.tvComponenteBuscado.text = args.componenteBuscado
         val root: View = binding!!.root
-
+        val navController = findNavController()
         listaComponentes.add(Procesador("AMD Ryzen 3",3.6,80000.0,R.drawable.amd_ryzen3))
-        listaComponentes.add(Procesador("AMD Ryzen 5", 4.4, 90.000,R.drawable.amd_ryzen5))
-        listaComponentes.add(Procesador("Intel I5", 3.5, 120.000,R.drawable.intel_core5))
-        listaComponentes.add(Procesador("AMD Ryzen 7", 5.5, 160.000,R.drawable.amd_ryzen_7_5700g1))
-        binding!!.recyclerBusquedaComponentes.adapter = BusquedaComponentesAdapter(listaComponentes)
+        listaComponentes.add(Procesador("AMD Ryzen 5", 4.4, 90000.0,R.drawable.amd_ryzen5))
+        listaComponentes.add(Procesador("Intel I5", 3.5, 120000.0,R.drawable.intel_core5))
+        listaComponentes.add(Procesador("AMD Ryzen 7", 5.5, 160000.0,R.drawable.amd_ryzen_7_5700g1))
+        binding!!.recyclerBusquedaComponentes.adapter = BusquedaComponentesAdapter(listaComponentes,navController)
         binding!!.recyclerBusquedaComponentes.layoutManager = LinearLayoutManager(context,
             LinearLayoutManager.VERTICAL,false)
 

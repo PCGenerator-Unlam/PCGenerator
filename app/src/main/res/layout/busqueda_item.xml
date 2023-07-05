@@ -17,7 +17,9 @@
             android:layout_margin="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dise_o_sin_t_tulo__1__removebg_preview__1_" />
+            app:srcCompat="@drawable/dise_o_sin_t_tulo__1__removebg_preview__1_"
+            android:foreground="?android:attr/selectableItemBackground"
+            />
 
         <TextView
             android:id="@+id/tv_titulocomponente"

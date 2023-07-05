@@ -41,6 +41,13 @@ lateinit var  binding: FragmentEleccionDeComponenteBinding
 
         binding = FragmentEleccionDeComponenteBinding.inflate(inflater, container, false)
 
+        return binding.root
+    }
+
+    @SuppressLint("SuspiciousIndentation")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         binding.btTgraficaComponentes.setOnClickListener{
             val action = FragmentEleccionDeComponentesDirections.actionFragmentEleccionDeComponenteToBusquedaComponentesFragment("Tarjeta Grafica")
             findNavController().navigate(action)
@@ -51,7 +58,11 @@ lateinit var  binding: FragmentEleccionDeComponenteBinding
         }
         binding.btMotherComponentes.setOnClickListener{
             val action = FragmentEleccionDeComponentesDirections.actionFragmentEleccionDeComponenteToBusquedaComponentesFragment("Tarjeta Madre")
+            binding.btMotherComponentes.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,
+                R.drawable.marque_el_circulo,0)
             findNavController().navigate(action)
+
+
         }
         binding.btProcesadorComponentes.setOnClickListener{
             val action = FragmentEleccionDeComponentesDirections.actionFragmentEleccionDeComponenteToBusquedaComponentesFragment("Procesadores")
@@ -64,20 +75,6 @@ lateinit var  binding: FragmentEleccionDeComponenteBinding
 
         binding.btVerpcComponentes.setOnClickListener{
             findNavController().navigate(R.id.action_fragment_eleccion_de_componente_to_fragmentEquiposArmados)
-        }
-        return binding.root
-    }
-
-    @SuppressLint("SuspiciousIndentation")
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        binding.btMotherComponentes.setOnClickListener {
-  binding.btMotherComponentes.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,
-      R.drawable.marque_el_circulo,0)
-
-          val  tipo = "MOTHER"
-          val  bundle = bundleOf("tipo" to tipo)
-            findNavController().navigate(R.id.action_fragment_eleccion_de_componente_to_busquedaComponentesFragment,bundle)
         }
 
 

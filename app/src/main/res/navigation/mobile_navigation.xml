@@ -73,6 +73,9 @@
         <argument
             android:name="componente_buscado"
             app:argType="string" />
+        <action
+            android:id="@+id/action_busquedaComponentesFragment_to_fragment_eleccion_de_componente"
+            app:destination="@id/fragment_eleccion_de_componente" />
     </fragment>
     <fragment
         android:id="@+id/historialFragment"
