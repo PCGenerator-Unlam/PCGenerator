@@ -1,10 +1,8 @@
 package com.example.pcgenerator.models
 
-import android.media.Image
-
 class Procesador(
     nombreMarca: String,
-    val velocidad:Float,
+    val velocidad: Double,
     precio:Double=0.0,
     image: Int? =null
 

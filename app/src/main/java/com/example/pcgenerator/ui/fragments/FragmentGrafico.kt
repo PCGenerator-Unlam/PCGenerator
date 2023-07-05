@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.echo.holographlibrary.Bar
+import com.example.pcgenerator.R
 import com.example.pcgenerator.databinding.FragmentGraficosBinding
 import com.example.pcgenerator.models.Procesador
 
@@ -35,9 +36,10 @@ class FragmentGrafico : Fragment(){
 
         val procesadores = ArrayList<Procesador>();
         val coloresBarras = ArrayList<String>();
-        procesadores.add(Procesador("Ryzen 5 PRO 4650G", 4.00F))
-        procesadores.add(Procesador("Ryzen 3 PRO 4350G", 3.85F))
-        procesadores.add(Procesador("Ryzen 7", 4.65F))
+
+        procesadores.add(Procesador("Ryzen 5 PRO 4650G", 4.00))
+        procesadores.add(Procesador("Ryzen 3 PRO 4350G", 3.85))
+        procesadores.add(Procesador("Ryzen 7", 4.65))
         coloresBarras.add("#6AE587")
         coloresBarras.add("#FFBB86FC")
         coloresBarras.add("#FF6200EE")
@@ -48,7 +50,7 @@ class FragmentGrafico : Fragment(){
                 val barra = Bar()
                 barra.color = Color.parseColor(coloresBarras[contador])
                 barra.name = procesador.tituloNombreMarca
-                barra.value = procesador.velocidad
+                barra.value = procesador.velocidad.toFloat()
                 barras.add(barra)
                 contador++
         }
