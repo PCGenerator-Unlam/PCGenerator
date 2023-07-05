@@ -25,7 +25,6 @@ class FragmentEquiposArmados : Fragment(){
 
         _binding = FragmentEquiposArmadosBinding.inflate(inflater, container, false)
 
-
         binding.buttonComparar.setOnClickListener{
             findNavController().navigate(R.id.action_fragmentEquiposArmados_to_fragmentGrafico)
         }

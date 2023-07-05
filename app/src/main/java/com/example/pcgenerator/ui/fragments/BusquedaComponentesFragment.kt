@@ -1,15 +1,16 @@
-package com.example.pcgenerator
+package com.example.pcgenerator.ui.fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.navArgs
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pcgenerator.databinding.FragmentBusquedaComponentesBinding
+import com.example.pcgenerator.models.Componentes
+import com.example.pcgenerator.ui.adapters.BusquedaComponentesAdapter
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
@@ -17,10 +18,15 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class BusquedaComponentesFragment : Fragment() {
+    private var binding: FragmentBusquedaComponentesBinding? = null
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
+    private val ARG_PARAM1 = "param1"
+    private val ARG_PARAM2 = "param2"
+
+    private val args by navArgs<BusquedaComponentesFragmentArgs>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -34,7 +40,22 @@ class BusquedaComponentesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_busqueda_componentes, container, false)
+
+        binding = FragmentBusquedaComponentesBinding.inflate(inflater, container, false)
+
+        var listaComponentes: MutableList<Componentes> = mutableListOf()
+        binding!!.tvComponenteBuscado.text = args.componenteBuscado
+        val root: View = binding!!.root
+/*
+        listaComponentes.add(Componentes("AMD Ryzen 3", 2, 80.000))
+        listaComponentes.add(Componentes("AMD Ryzen 5", 2, 90.000))
+        listaComponentes.add(Componentes("Intel I5", 2, 120.000))
+        listaComponentes.add(Componentes("AMD Ryzen 7", 2, 160.000))
+        binding!!.recyclerBusquedaComponentes.adapter = BusquedaComponentesAdapter(listaComponentes)
+        binding!!.recyclerBusquedaComponentes.layoutManager = LinearLayoutManager(context,
+            LinearLayoutManager.VERTICAL,false)
+            */
+        return root
     }
 
     companion object {

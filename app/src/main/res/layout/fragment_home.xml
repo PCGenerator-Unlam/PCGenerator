@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:backgroundTint="#121212"
+    android:background="@color/fondo"
+    android:backgroundTint="@color/fondo"
     tools:context=".ui.fragments.home.HomeFragment">
 
     <LinearLayout
@@ -16,17 +16,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="1dp">
 
-        <TextView
-            android:id="@+id/textView"
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_my_violet"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/arimo"
             android:gravity="center"
-            android:padding="10dp"
             android:text="Bienvenido"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+
+            android:layout_height="2dp"
+
+            android:background="@drawable/line_shape"
+            tools:layout_editor_absoluteY="1dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="20dp">

@@ -11,9 +11,6 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_navigation_home_to_fragmentEquiposArmados"
-            app:destination="@id/fragmentEquiposArmados" />
-        <action
             android:id="@+id/action_navigation_home_to_nuevaComputadoraFragment"
             app:destination="@id/nuevaComputadoraFragment" />
         <action
@@ -44,12 +41,15 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_eleccion_de_componente"
-        android:name="com.example.pcgenerator.fragment_eleccion_de_componente"
-        android:label="fragment_eleccion_de_componente"
+        android:name="com.example.pcgenerator.ui.fragments.FragmentEleccionDeComponentes"
+        android:label="FragmentEleccionDeComponentes"
         tools:layout="@layout/fragment_eleccion_de_componente" >
         <action
             android:id="@+id/action_fragment_eleccion_de_componente_to_busquedaComponentesFragment"
             app:destination="@id/busquedaComponentesFragment" />
+        <action
+            android:id="@+id/action_fragment_eleccion_de_componente_to_fragmentEquiposArmados"
+            app:destination="@id/fragmentEquiposArmados" />
     </fragment>
     <fragment
         android:id="@+id/fragmentGrafico"
@@ -67,9 +67,13 @@
     </fragment>
     <fragment
         android:id="@+id/busquedaComponentesFragment"
-        android:name="com.example.pcgenerator.BusquedaComponentesFragment"
+        android:name="com.example.pcgenerator.ui.fragments.BusquedaComponentesFragment"
         android:label="BusquedaComponentesFragment"
-        tools:layout="@layout/fragment_busqueda_componentes"/>
+        tools:layout="@layout/fragment_busqueda_componentes">
+        <argument
+            android:name="componente_buscado"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/historialFragment"
         android:name="com.example.pcgenerator.ui.fragments.HistorialFragment"

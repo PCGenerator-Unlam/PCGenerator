@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.pcgenerator.R
 import com.example.pcgenerator.databinding.FragmentNuevaComputadoraBinding
 import androidx.navigation.fragment.findNavController
+import com.example.pcgenerator.databinding.FragmentHomeBinding
 
 class NuevaComputadoraFragment : Fragment() {
     private var _binding: FragmentNuevaComputadoraBinding? = null
@@ -18,23 +19,28 @@ class NuevaComputadoraFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-/*
-        binding.lyGaming.setOnClickListener{
-            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
-        }
-        binding.lyDesign.setOnClickListener{
-            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
-        }
-        binding.lyOffice.setOnClickListener{
-            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
-        }
-        binding.lyCustom.setOnClickListener{
-            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
-        }
-        */
 
 
-        return inflater.inflate(R.layout.fragment_nueva_computadora, container, false)
+        _binding = FragmentNuevaComputadoraBinding.inflate(inflater, container, false)
+
+        binding.btnPcGaming.setOnClickListener{
+            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
+        }
+        binding.btnPcProgra.setOnClickListener{
+            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
+        }
+        binding.btnPcDesing.setOnClickListener{
+            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
+        }
+        binding.btnPcOffice.setOnClickListener{
+            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
+        }
+        binding.btnPcCustom.setOnClickListener{
+            findNavController().navigate(R.id.action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente)
+        }
+
+        val root: View = binding.root
+        return root
     }
 
     override fun onDestroyView() {

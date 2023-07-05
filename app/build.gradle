@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -16,7 +17,14 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
+    buildscript {
+        repositories {
+            google()
+        }
+        dependencies {
+            classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false

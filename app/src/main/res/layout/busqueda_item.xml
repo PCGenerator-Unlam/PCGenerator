@@ -1,74 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/black">
-
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-
-        android:background="@drawable/line_shape"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteY="1dp" />
-
-    <ImageView
-        android:id="@+id/im_imagencomponente"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dise_o_sin_t_tulo__1__removebg_preview__1_" />
-
-    <TextView
-        android:id="@+id/tv_titulocomponente"
-        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/arimo"
-        android:text="Memoria RAM Fury Beast "
-        android:textColor="@color/secondary"
-        app:layout_constraintStart_toEndOf="@+id/im_imagencomponente"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/fondo"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/tv_descripcion"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/arimo"
-        android:text="DDR4 RGB gamer color negro 8GB 1 Kingston KF432C16BBA/8"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/im_imagencomponente"
-        app:layout_constraintTop_toBottomOf="@+id/tv_titulocomponente" />
 
-    <TextView
-        android:id="@+id/tv_precio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/arimo"
-        android:text="$200000"
-        android:textColor="@color/secondary"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_descripcion"
-        app:layout_constraintVertical_bias="0.086" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+        <ImageView
+            android:id="@+id/im_imagencomponente"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dise_o_sin_t_tulo__1__removebg_preview__1_" />
+
+        <TextView
+            android:id="@+id/tv_titulocomponente"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/arimo"
+            android:text="Memoria RAM Fury Beast "
+            android:textColor="@color/secondary"
+            app:layout_constraintStart_toEndOf="@+id/im_imagencomponente"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/arimo"
+            android:text="DDR4 RGB gamer color negro 8GB 1 Kingston KF432C16BBA/8"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/im_imagencomponente"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titulocomponente" />
+
+        <TextView
+            android:id="@+id/tv_precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/arimo"
+            android:text="$200000"
+            android:textColor="@color/secondary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_descripcion"
+            app:layout_constraintVertical_bias="0.086" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/line_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

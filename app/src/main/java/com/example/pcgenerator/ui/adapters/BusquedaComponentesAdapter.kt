@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pcgenerator.databinding.BusquedaItemBinding
-import com.example.pcgenerator.databinding.HistorialItemBinding
 import com.example.pcgenerator.models.Componentes
 import com.example.pcgenerator.models.SetupHistorial
 
