@@ -15,4 +15,10 @@
     <string name="custom">LIBRE</string>
     <string name="title_new_computer">Nueva Computadora</string>
     <string name="title_historial">Tu historial</string>
+    <string name="inicio_sesion_pantalla">Iniciar sesion</string>
+    <string name="equipos_armados_pantalla">Equipos Armados</string>
+    <string name="eleccion_de_componentes_pantalla">Eleccion de componentes</string>
+    <string name="grafico_pantalla">Grafico</string>
+    <string name="registro_pantalla">Registro</string>
+    <string name="busqueda_componentes_pantalla">Busqueda de componentes</string>
 </resources>

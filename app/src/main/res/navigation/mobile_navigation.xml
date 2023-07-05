@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/fragmentLogin"
         android:name="com.example.pcgenerator.ui.fragments.FragmentLogin"
-        android:label="FragmentLogin"
+        android:label="@string/inicio_sesion_pantalla"
         tools:layout="@layout/fragment_login"  >
         <action
             android:id="@+id/action_fragmentLogin_to_fragmentRegistro"
@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/fragmentEquiposArmados"
         android:name="com.example.pcgenerator.ui.fragments.FragmentEquiposArmados"
-        android:label="FragmentEquiposArmados"
+        android:label="@string/equipos_armados_pantalla"
         tools:layout="@layout/fragment_equipos_armados" >
         <action
             android:id="@+id/action_fragmentEquiposArmados_to_fragmentGrafico"
@@ -42,7 +42,7 @@
     <fragment
         android:id="@+id/fragment_eleccion_de_componente"
         android:name="com.example.pcgenerator.ui.fragments.FragmentEleccionDeComponentes"
-        android:label="FragmentEleccionDeComponentes"
+        android:label="@string/eleccion_de_componentes_pantalla"
         tools:layout="@layout/fragment_eleccion_de_componente" >
         <action
             android:id="@+id/action_fragment_eleccion_de_componente_to_busquedaComponentesFragment"
@@ -54,12 +54,12 @@
     <fragment
         android:id="@+id/fragmentGrafico"
         android:name="com.example.pcgenerator.ui.fragments.FragmentGrafico"
-        android:label="FragmentGrafico"
+        android:label="@string/grafico_pantalla"
         tools:layout="@layout/fragment_graficos" />
     <fragment
         android:id="@+id/fragmentRegistro"
         android:name="com.example.pcgenerator.ui.fragments.FragmentRegistro"
-        android:label="FragmentRegistro"
+        android:label="@string/registro_pantalla"
         tools:layout="@layout/fragment_registro" >
         <action
             android:id="@+id/action_fragmentRegistro_to_fragmentLogin"
@@ -68,7 +68,7 @@
     <fragment
         android:id="@+id/busquedaComponentesFragment"
         android:name="com.example.pcgenerator.ui.fragments.BusquedaComponentesFragment"
-        android:label="BusquedaComponentesFragment"
+        android:label="@string/busqueda_componentes_pantalla"
         tools:layout="@layout/fragment_busqueda_componentes">
         <argument
             android:name="componente_buscado"
