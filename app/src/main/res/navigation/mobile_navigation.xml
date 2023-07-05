@@ -14,8 +14,11 @@
             android:id="@+id/action_navigation_home_to_fragmentEquiposArmados"
             app:destination="@id/fragmentEquiposArmados" />
         <action
-            android:id="@+id/action_navigation_home_to_fragment_eleccion_de_componente"
-            app:destination="@id/fragment_eleccion_de_componente" />
+            android:id="@+id/action_navigation_home_to_nuevaComputadoraFragment"
+            app:destination="@id/nuevaComputadoraFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_historialFragment"
+            app:destination="@id/historialFragment" />
     </fragment>
 
     <fragment
@@ -67,4 +70,18 @@
         android:name="com.example.pcgenerator.BusquedaComponentesFragment"
         android:label="BusquedaComponentesFragment"
         tools:layout="@layout/fragment_busqueda_componentes"/>
+    <fragment
+        android:id="@+id/historialFragment"
+        android:name="com.example.pcgenerator.ui.fragments.HistorialFragment"
+        android:label="@string/title_historial"
+        tools:layout="@layout/fragment_historial" />
+    <fragment
+        android:id="@+id/nuevaComputadoraFragment"
+        android:name="com.example.pcgenerator.ui.fragments.NuevaComputadoraFragment"
+        android:label="@string/title_new_computer"
+        tools:layout="@layout/fragment_nueva_computadora" >
+        <action
+            android:id="@+id/action_nuevaComputadoraFragment_to_fragment_eleccion_de_componente"
+            app:destination="@id/fragment_eleccion_de_componente" />
+    </fragment>
 </navigation>

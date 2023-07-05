@@ -67,7 +67,6 @@
                 android:background="@drawable/border_input_primary"
                 android:inputType="text"
                 android:paddingStart="15dp"
-                android:text="lionelmessi123"
                 android:textColor="@color/text_gray"
                 android:textSize="15sp"
                 tools:layout_marginStart="10dp" />
@@ -83,14 +82,13 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/inputContraseña"
+                android:id="@+id/inputContrasenia"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/border_input_primary"
                 android:inputType="textPassword"
                 android:paddingStart="15dp"
-                android:text="lionelmessi123"
                 android:textColor="@color/text_gray"
                 android:textSize="15sp"
                 tools:layout_marginStart="10dp" />

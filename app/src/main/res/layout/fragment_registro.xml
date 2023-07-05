@@ -53,7 +53,6 @@
                     android:inputType="text"
                     android:paddingStart="15dp"
                     android:paddingEnd="2dp"
-                    android:text="lionelmessi123"
                     android:textColor="#515151"
                     android:textSize="15sp"
                     tools:layout_marginStart="10dp" />
@@ -76,7 +75,6 @@
                     android:background="@drawable/border_input_primary"
                     android:inputType="textPassword"
                     android:paddingStart="15dp"
-                    android:text="lionelmessi123"
                     android:textColor="#515151"
                     android:textSize="15sp"
                     tools:layout_marginStart="10dp" />
@@ -99,7 +97,6 @@
                     android:background="@drawable/border_input_primary"
                     android:inputType="textPassword"
                     android:paddingStart="15dp"
-                    android:text="lionelmessi123"
                     android:textColor="#515151"
                     android:textSize="15sp"
                     tools:layout_marginStart="10dp" />

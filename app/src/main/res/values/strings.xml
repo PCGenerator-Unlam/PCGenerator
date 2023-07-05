@@ -5,4 +5,14 @@
     <string name="title_notifications">Notifications</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apply_filters">"Aplicar Filtros</string>
+    <string name="change_filters">"Cambiar Filtros</string>
+    <string name="applied_filters">"Filtros: "</string>
+    <string name="description_new_computer">¿Para que piensa usar el equipo?</string>
+    <string name="gaming">GAMING</string>
+    <string name="design">DISEÑO</string>
+    <string name="office">OFICINA</string>
+    <string name="custom">LIBRE</string>
+    <string name="title_new_computer">Nueva Computadora</string>
+    <string name="title_historial">Tu historial</string>
 </resources>
